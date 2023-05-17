@@ -153,8 +153,13 @@
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Data Preprocessing</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<h3><a href="#">Handling Missing Values</a></h3>
+								<p>To handle missing values, we first examined our dataset’s columns to determine which ones have null values.
+
+In this case, optional columns e.g. Tweet Translated, Screenshot, Views, Rating, Remarks, Reviewer, and Review have null values for all rows. These columns prove to be insignificant to our analysis and so we dropped them.
+
+Further, non-optional columns e.g. Account Bio, Location, and Account Bio URLs have high null values but we decided not to impute them as we wanted to investigate further/ these features are not significant to answering our problem statement, which aims to answer if Risa-related tweets garner the highest engagement relative to other unrelated tweets made by the same user.
+</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
