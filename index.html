@@ -147,26 +147,48 @@
 				<div class="container">
 					<header>
 						<h2>Let's talk about our data science methodology.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						<p>In order to derive significant insights from the data, we first had to clean the dataset. This is how we preprocessed our data.</p>
 					</header>
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 								<h3><a href="#">Handling Missing Values</a></h3>
-								<p>To handle missing values, we first examined our dataset’s columns to determine which ones have null values.
-
-In this case, optional columns e.g. Tweet Translated, Screenshot, Views, Rating, Remarks, Reviewer, and Review have null values for all rows. These columns prove to be insignificant to our analysis and so we dropped them.
-
-Further, non-optional columns e.g. Account Bio, Location, and Account Bio URLs have high null values but we decided not to impute them as we wanted to investigate further/ these features are not significant to answering our problem statement, which aims to answer if Risa-related tweets garner the highest engagement relative to other unrelated tweets made by the same user.
-</p>
+								<p>To handle missing values, we first examined our dataset’s columns to determine which ones have null values.</p>
+								<p>In this case, optional columns e.g. Tweet Translated, Screenshot, Views, Rating, Remarks, Reviewer, and Review have null values for all rows. These columns prove to be insignificant to our analysis and so we dropped them.</p>
+								<p>Further, non-optional columns e.g. Account Bio, Location, and Account Bio URLs have high null values but we decided not to impute them as we wanted to investigate further/ these features are not significant to answering our problem statement, which aims to answer if Risa-related tweets garner the highest engagement relative to other unrelated tweets made by the same user.</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Machine Learning</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<h3><a href="#">Handling Outliers</a></h3>
+								<p>To handle outliers, we tried to determine which columns have outliers, but we did not impute them because we wanted to investigate further the existence of these outliers.</p>
+								<p>Most numerical features e.g. Following, Followers, Likes, Replies, Retweets and Quote Tweets do not have a normal distribution.</p>
+							</article>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<h3><a href="#">Ensuring formatting consistency</a></h3>
+								<p>We standardized date and text formatting of select columns in the dataset. For instance, we converted the initial format of the Joined column from 2016-10-25 05:02:43+00:00 to the required MM/YY format. The same was done for the Date Posted column.</p>
+								<p>We also added a @ symbol to all entries under the Account Handle column.</p>
+								<p>Furthermore, we standardized numerical columns e.g. Following, Followers, Likes, Replies, Retweets and Quote Tweets. This allows the features to be easily comparable, to reduce impact of outliers, and to approximate a normal distribution, which can allow easier execution of statistical techniques such as linear regression, logistic regression, and hypothesis testing.</p>
+								<p>Lastly, we performed categorical data encoding on nominal columns e.g. Account Type, Tweet Type, and Content Type through dummy variables. This then creates a separate column for each possible value under each column i.e. when a tweet has a content type of rational, the tweet is tagged as a 1 under the Content Type_Rational column.</p>
+							</article>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<h3><a href="#">NLP</a></h3>
+								<p>In this section, we performed text preprocessing techniques. We followed the ff. work flow:</p>
+								<ol>
+									<li>Remove all punctuation</li>
+									<li>Lowercase all letters</li>
+									<li>Remove links</li>
+									<li>Remove stop words</li>
+								</ol>
+								<p>From this list of cleaned tweets, we conducted tokenization and lemmatization and then inserted new columns in the dataframe named Tokenized Tweets and Lemmatized Tweets. We chose to lemmatize instead of stem as the former reduces words to their base form while taking into account the context and meaning of words.</p>
 							</article>
 						</div>
 					</div>
