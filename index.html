@@ -152,7 +152,6 @@
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 								<h3><a href="#">Handling Missing Values</a></h3>
 								<p>To handle missing values, we first examined our dataset’s columns to determine which ones have null values.</p>
 								<p>In this case, optional columns e.g. Tweet Translated, Screenshot, Views, Rating, Remarks, Reviewer, and Review have null values for all rows. These columns prove to be insignificant to our analysis and so we dropped them.</p>
@@ -161,15 +160,26 @@
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 								<h3><a href="#">Handling Outliers</a></h3>
 								<p>To handle outliers, we tried to determine which columns have outliers, but we did not impute them because we wanted to investigate further the existence of these outliers.</p>
 								<p>Most numerical features e.g. Following, Followers, Likes, Replies, Retweets and Quote Tweets do not have a normal distribution.</p>
+								<p>They are mostly skewed to the left and all features have outliers as you can see in the histogram images below:</p>
+								<img src="images/pic00.png" alt="" />
+								<img src="images/pic00.png" alt="" />
+								<p>For instance, the Following column has a maximum value of 14522 as compared to its mean value of 636.532468. Who is this user?</p>
+								<img src="images/pic00.png" alt="" />
+								<img src="images/pic00.png" alt="" />
+								<p>The Follower column has a maximum value of 65409 as compared to its mean value of 3464.512987.</p>
+								<img src="images/pic00.png" alt="" />
+								<img src="images/pic00.png" alt="" />
+								<p>Interestingly, most likes (139 out of 154) have also only garnered 0 - 4 likes. The tweet with the most number of likes (299) stated the ff.: If the Maute group didn't commit rebellion or invasion, what's their crime Senator Risa Hontiveros? Trespassing?. This came from @srsasot who also has the highest follower count, 65409.</p>
+								<img src="images/pic00.png" alt="" />
+								<img src="images/pic00.png" alt="" />
+								<p>Whereas 136 out of 154 tweets have 0 replies, 130 tweets out of 154 tweets have 0 quote tweets, and 129 out of 154 retweets have 0 replies. The maximum number of quote tweets and retweets for a tweet are 14 and 111, respectively.</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 								<h3><a href="#">Ensuring formatting consistency</a></h3>
 								<p>We standardized date and text formatting of select columns in the dataset. For instance, we converted the initial format of the Joined column from 2016-10-25 05:02:43+00:00 to the required MM/YY format. The same was done for the Date Posted column.</p>
 								<p>We also added a @ symbol to all entries under the Account Handle column.</p>
@@ -179,7 +189,6 @@
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 								<h3><a href="#">NLP</a></h3>
 								<p>In this section, we performed text preprocessing techniques. We followed the ff. work flow:</p>
 								<ol>
