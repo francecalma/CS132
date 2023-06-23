@@ -91,7 +91,7 @@
 						<h2>We mined the internet for fake news data.</h2>
 						<p>This is how we did it.</p>
 						<script src="https://gist.github.com/omeeeeeeee/bc413eb5ffa452db14c3b19e52aa1174.js"></script>
-						<embed type="text/html" src="Fake_News_Preprocessing.html" width="50%" height="300">
+						<embed type="text/html" src="Fake_News_Preprocessing.html" width="100%" height="500">
 					</header>
 					<!--<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
@@ -165,18 +165,27 @@
 								<p>To handle outliers, we tried to determine which columns have outliers, but we did not impute them because we wanted to investigate further the existence of these outliers.</p>
 								<p>Most numerical features e.g. Following, Followers, Likes, Replies, Retweets and Quote Tweets do not have a normal distribution.</p>
 								<p>They are mostly skewed to the left and all features have outliers as you can see in the histogram images below:</p>
-								<img src="images/pic00.png" alt="" />
-								<img src="images/pic00.png" alt="" />
-								<p>For instance, the Following column has a maximum value of 14522 as compared to its mean value of 636.532468. Who is this user?</p>
-								<img src="images/pic00.png" alt="" />
-								<img src="images/pic00.png" alt="" />
-								<p>The Follower column has a maximum value of 65409 as compared to its mean value of 3464.512987.</p>
-								<img src="images/pic00.png" alt="" />
-								<img src="images/pic00.png" alt="" />
-								<p>Interestingly, most likes (139 out of 154) have also only garnered 0 - 4 likes. The tweet with the most number of likes (299) stated the ff.: If the Maute group didn't commit rebellion or invasion, what's their crime Senator Risa Hontiveros? Trespassing?. This came from @srsasot who also has the highest follower count, 65409.</p>
-								<img src="images/pic00.png" alt="" />
-								<img src="images/pic00.png" alt="" />
-								<p>Whereas 136 out of 154 tweets have 0 replies, 130 tweets out of 154 tweets have 0 quote tweets, and 129 out of 154 retweets have 0 replies. The maximum number of quote tweets and retweets for a tweet are 14 and 111, respectively.</p>
+								<img src="Distribution of Following Accounts.png" alt="" />
+								<img src="Variation of Following Accounts.png" alt="" />
+								<p>For instance, the Following column has a maximum value of 14389 as compared to its mean value of 787.393220. Who is this user?</p>
+								<img src="Distribution of Followers.png" alt="" />
+								<img src="Variation of Followers.png" alt="" />
+								<p>The Follower column has a maximum value of 8.974332 M as compared to its mean value of 164.4501 K.</p>
+								<img src="Distribution of Like Count.png" alt="" />
+								<img src="Variation of Like Count.png" alt="" />
+								<p>Interestingly, most likes (267 out of 294) have also only garnered 0 - 19 likes. The tweet with the most number of likes (1008) stated the ff.: Sen. Risa Hontiveros on learning materials that rebrand Martial Law period to “New Society”:
+
+“DepEd shouldn’t be an enabler of Martial Law rebranding.”
+
+It is “a blatant failure of our education authority to ensure the truthful and complete narration of the Marcos dictatorship.”
+. This came from @barnabychuck who has a follower count of 10265.</p>
+								<img src="Distribution of Reply Count.png" alt="" />
+								<img src="Variation of Reply Count.png" alt="" />
+								<img src="Distribution of Retweet Count.png" alt="" />
+								<img src="Variation of Retweet Count.png" alt="" />
+								<img src="Distribution of Quote Retweet Count.png" alt="" />
+								<img src="Variation of Quote Retweet Count.png" alt="" />
+								<p>Whereas 252 out of 294 (85.71%) tweets have 0 - 1 replies, 243 tweets out of 294 (82.65%) tweets have 0 quote tweets, and 265 out of 294 (90.14%) retweets have 0 - 4 replies. The maximum number of quote tweets and retweets for a tweet are 14 and 111, respectively.</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
