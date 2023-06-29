@@ -21,6 +21,7 @@
 					<li><a href="#data">Data</a></li>
 					<li><a href="#methods">Methods</a></li>
 					<li><a href="#results">Results</a></li>
+					<li><a href="#conclusion">Conclusion</a></li>
 					<li><a href="#team">Team</a></li>
 				</ul>
 			</nav>
@@ -277,9 +278,58 @@ It is “a blatant failure of our education authority to ensure the truthful and
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic15.png" alt="" /></a>
-								<img src="Related Tweets Clustering.png" alt="" />
+								<!-- <img src="Related Tweets Clustering.png" alt="" /> -->
 								<h3><a href="#">Text Clustering</a></h3>
-								<p>This graph shows possible clusters that were derived from the cleaned tweets after preprocessing. However in the graph, there does not appear to be a clear distinction between cluster rebellion and cluster emotions.</p>
+								<p>This graph shows possible clusters that were derived from the cleaned tweets after preprocessing. However,
+									there does not appear to be a clear distinction between cluster rebellion and cluster emotions in the graph.</p>
+							</article>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/content-type-comparison.png" alt="" /></a>
+								<h3><a href="#">Related and Unrelated Tweets Comparison</a></h3>
+								<p><bold>Content Type:</bold> For both related and unrelated tweets, transactional tweets have 
+								the highest count. This might be because the credibility of tweets possibly increases when there is a link 
+								to support it.</p>
+								<p><bold>Tweet Type:</bold> For related tweets, URL tweets have the highest count. For unrelated 
+								tweets, text tweets have the highest count. These types are the least hassle type of tweets, especially if 
+									you were to mass tweet them.</p>
+								<p><bold>Engagement metrics:</bold> Unrelated tweets have the highest maximum likes, replies, and quote 
+								retweets. Related tweets have the highest maximum retweets.</p>
+							</article>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/correlation-matrix.png" alt="" /></a>
+								<h3><a href="#">Correlation of Related and Unrelated</a></h3>
+								<p>Positive correlation was observed between the reply counts. Followers are 21% stronger 
+								in unrelated tweets compared to related tweets.</p>
+							</article>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/time-series.png" alt="" /></a>
+								<h3><a href="#">Time-series Analysis</a></h3>
+								<p>Both related and unrelated tweets peaked in engagement in April 2018. Coincidentally, 
+								this was during Risa's first Senate term and when she started criticizing the President at the time.</p>
+							</article>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/clustering.png" alt="" /></a>
+								<h3><a href="#">Clustering</a></h3>
+								<p>Related tweets have the following common themes:</p>
+								<ol>
+									<li>derogatory terms towards Risa</li>
+									<li>respect towards women</li>
+									<li>Risa's statement on terrorism in Marawi and the Maute Group</li>
+								</ol>
+								<p>Meanwhile, unrelated tweets have the following common themes:</p>
+								<ol>
+									<li>support of Sara and Rodrigo Duterte</li>
+									<li>comparison of Sara and Risa</li>
+									<li>non-Tagalog nor non-English words</li>
+								</ol>
 							</article>
 						</div>
 					</div>
@@ -296,6 +346,29 @@ It is “a blatant failure of our education authority to ensure the truthful and
 				</div>
 			</article>
 
+		<!-- Conclusion -->
+			<article id="conclusion" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Based on our results, we have concluded the following.</h2>
+					</header>
+					<div class="col-12">
+						<article class="box style2">
+							<h3>Statistical Analysis</h3>
+							<p>We got a p-value < 0.05 from Mann Whitney U-test so we <bold>reject</bold> the null hypothesis that 
+								the engagement of tweets that red tag Risaand those unrelated tweets of the same user does not 
+							have a significant difference.</p>
+							<p>Moreover, according to the mean values of the created data frames, red-tagging tweets have 
+								<bold>lower engagement</bold> compared to unrelated tweets by the same user.</p>
+							<p>However, related tweets have higher retweet reach, indicating their potential for message dissemination.
+							The topics of related and unrelated tweets highlight specific themes of Risa, her political statements, and comparison 
+								to other politicians.</p>
+						</article>
+					</div>
+				</div>
+			</article>
+
+		
 		<!-- Team -->
 			<article id="team" class="wrapper style4">
 				<div class="container medium">
@@ -305,7 +378,7 @@ It is “a blatant failure of our education authority to ensure the truthful and
 							<div class="col-4 col-12-small">
 								<h4>Naomi Ashley Amparo</h4>
 								<p>naamparo@up.edu.ph</p>
-								<ul>
+								<ul class="social">
 									<li><a href="https://www.facebook.com/naomi.ashley.a.amparo" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.linkedin.com/in/naomi-amparo/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/omeeeeeeee" class="icon brands fa-github"><span class="label">Github</span></a></li>
@@ -314,7 +387,7 @@ It is “a blatant failure of our education authority to ensure the truthful and
 							<div class="col-4 col-12-small">
 								<h4>Francine Reign Calma</h4>
 								<p>fgcalma@up.edu.ph</p>
-								<ul>
+								<ul class="social">
 									<li><a href="https://www.facebook.com/francine.calma/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.linkedin.com/in/francine-reign-calma-161a32225/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/francecalma" class="icon brands fa-github"><span class="label">Github</span></a></li>
@@ -323,7 +396,7 @@ It is “a blatant failure of our education authority to ensure the truthful and
 							<div class="col-4 col-12-small">
 								<h4>John Barnett Gaano</h4>
 								<p>bgaano2@gmail.com</p>
-								<ul>
+								<ul class="social">
 									<li><a href="https://www.facebook.com/bgaano" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.linkedin.com/in/bgaano/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/RaynbowDeath" class="icon brands fa-github"><span class="label">Github</span></a></li>
@@ -370,7 +443,7 @@ It is “a blatant failure of our education authority to ensure the truthful and
 								<li><a href="https://www.facebook.com/bgaano" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="https://www.linkedin.com/in/bgaano/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/RaynbowDeath" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
+								
 								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
 								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
 								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
@@ -380,7 +453,7 @@ It is “a blatant failure of our education authority to ensure the truthful and
 								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
 								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
 								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
+								
 							</ul>
 							<hr />
 						</div>
